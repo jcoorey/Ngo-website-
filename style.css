@@ -1,0 +1,213 @@
+style.css
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ===== Header ===== */
+header {
+  background: #0B3D91;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+/* ===== Navigation ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #082c61;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('hero.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #0B3D91;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero a:hover {
+  background: #082c61;
+}
+
+/* ===== Section Defaults ===== */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0B3D91;
+}
+
+/* ===== About Us ===== */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.about-image {
+  flex: 1 1 400px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ===== Get Involved ===== */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.btn-primary { background-color: #003366; }
+.btn-secondary { background-color: #0055a5; }
+.btn-tertiary { background-color: #0073e6; }
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ===== Gallery ===== */
+.gallery-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #0B3D91;
+}
+
+.social-icons a:hover {
+  color: #082c61;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #0B3D91;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-text, .about-image {
+    flex: 1 1 100%;
+  }
+}
