@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Love Sprinklers Foundation is a charity organization in Kenya spreading kindness through education, community support, and empowerment programs.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Sprinklers Foundation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #000;
+    }
+    header {
+        background-color: #0B3D91;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    nav {
+        background-color: #0B3D91;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px 0;
+        flex-wrap: wrap;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .hero {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #E6ECF7;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+        color: #0B3D91;
+    }
+    .hero p {
+        font-size: 1.1rem;
+        margin: 10px 0 20px;
+    }
+    .btn {
+        background-color: #0B3D91;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .btn:hover {
+        background-color: #082c61;
+    }
+    .button-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        justify-items: center;
+        margin: 20px auto;
+        max-width: 500px;
+    }
+    .section {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    h2.section-title {
+        color: #0B3D91;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    h3 {
+        color: #0B3D91;
+    }
+    p {
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+    /* Gallery */
+    .gallery-container {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .mySlides {
+        display: none;
+    }
+    .mySlides img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -25px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.3s;
+        border-radius: 0 3px 3px 0;
+        background-color: rgba(0,0,0,0.5);
+        user-select: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    /* Contact & Social */
+    .contact-info {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .social-icons a {
+        color: #0B3D91;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .social-icons a:hover {
+        color: #082c61;
+    }
+    footer {
+        background-color: #0B3D91;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 50px;
+    }
+        /* Responsive */
+    @media screen and (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .hero h2 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+</head>
+<body>
+    
+
+<header>
+    <h1>Love Sprinklers Foundation</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#getinvolved">Get Involved</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Changing Lives, One Sprinkle at a Time</h2>
+    <p>A charity organization made to change lives and spread kindness.</p>
+    <div class="button-group">
+<a href="#getinvolved">Get Involved</a>
+      
+      <a href="https://wa.me/254747227522" target="_blank" class="btn">WhatsApp</a>
+      <a href="#donate" class="btn">Donate</a>
+    </div>
+</section>
+
+<img src="https://i.postimg.cc/fyPR61Wn/IMG-20210103-110645.jpg" 
+     alt="Love Sprinklers Foundation Banner" 
+     width="100%" 
+     style="max-width:1000px; height:auto; display:block; margin:auto;">
+
+<section class="section" id="about">
+    <h2 class="section-title">About Us</h2>
+    <h3>Sprinkling Love, Changing Lives</h3>
+    <p>Founded with a simple belief that kindness can change the world, <strong>Love Sprinklers Foundation</strong> has touched countless lives through education, community support, and empowerment programs.</p>
+    <p>Since our journey began, we’ve worked hand in hand with schools, families, and communities, ensuring that every child has the opportunity to dream, learn, and thrive.</p>
+    <p><strong>Mission:</strong> To create sustainable change through education, mentorship, and community outreach.</p>
+    <p><strong>Vision:</strong> A future where compassion connects us all.</p>
+    <p><strong>Core Values:</strong> Love, Integrity, Commitment, and Empowerment.</p>
+</section>
+
+<section class="section" id="gallery">
+    <h2 class="section-title">Our Work in Action</h2>
+    <div class="gallery-container">
+        <div class="mySlides"><img src="https://i.postimg.cc/tYcBpXLJ/DSC-8188.jpg" alt="Gallery Image 1"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/5H0qDDt1/DSC-8361.jpg" alt="Gallery Image 2"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/gLRf8x9M/IMG20210103115659.jpg" alt="Gallery Image 3"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/5HTvT0Gq/IMG20210103115916.jpg" alt="Gallery Image 4"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/sQnFskYc/IMG20210103115948.jpg" alt="Gallery Image 5"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/CRffDYdR/IMG20210103120046.jpg" alt="Gallery Image 6"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/Hr1NDWGm/IMG20210103120224.jpg" alt="Gallery Image 7"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/gLw7dnkz/IMG20210103120441.jpg" alt="Gallery Image 8"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/w33ZDb5C/IMG20210103121017.jpg" alt="Gallery Image 9"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/56Wc1SvD/IMG20210103122743.jpg" alt="Gallery Image 10"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/n9vvvJ3K/IMG20210103124641.jpg" alt="Gallery Image 11"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/HjB51Bfk/IMG20210103173809.jpg" alt="Gallery Image 12"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/xXHc8RFH/IMG-20210103-110647.jpg" alt="Gallery Image 13"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/0M4fKsKw/DSC-7701.jpg" alt="Gallery Image 14"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/Ff7Grz74/DSC-7845.jpg" alt="Gallery Image 15"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/zyd0YKD7/DSC-7847.jpg" alt="Gallery Image 16"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/1VZ8jCLd/DSC-7852.jpg" alt="Gallery Image 17"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/7Csc9jTx/DSC-7878.jpg" alt="Gallery Image 18"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/CRWn8xcY/DSC-7984.jpg" alt="Gallery Image 19"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/SXkqH0sC/DSC-8009.jpg" alt="Gallery Image 20"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/CndQ97kj/DSC-8010.jpg" alt="Gallery Image 21"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/zyk4byzH/DSC-8236.jpg" alt="Gallery Image 22"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/bspTG3sL/DSC-8242.jpg" alt="Gallery Image 23"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/G4JnFMQ2/DSC-8278.jpg" alt="Gallery Image 24"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/t1KJsvCg/DSC-8280.jpg" alt="Gallery Image 25"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/Ln8PK7qd/DSC-8363.jpg" alt="Gallery Image 26"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/21C4669t/DSC-8386.jpg" alt="Gallery Image 27"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/cvK86nMX/IMG20210103115641.jpg" alt="Gallery Image 28"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/jwnf9JCD/IMG20210103115645.jpg" alt="Gallery Image 29"></div>
+        <div class="mySlides"><img src="https://i.postimg.cc/zHmxPND1/IMG20210103115650.jpg" alt="Gallery Image 30"></div>
+
+<div class="mySlides"><img src="https://i.postimg.cc/qtv7Wvwy/DSC-7852.jpg" alt="Gallery Image 31"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/JD94ycLB/DSC-8280.jpg" alt="Gallery Image 32"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/QV9FXV34/DSC-8386.jpg" alt="Gallery Image 33"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/fVZyjK0q/IMG20210103115645.jpg" alt="Gallery Image 34"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/yWMkWB1f/IMG20210103115720.jpg" alt="Gallery Image 35"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/BLdQ8c0n/IMG20210103115737.jpg" alt="Gallery Image 36"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/rdfDprsh/IMG20210103115754.jpg" alt="Gallery Image 37"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/yWMkWB12/IMG20210103120516.jpg" alt="Gallery Image 38"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/94LDf70T/IMG20210103120630.jpg" alt="Gallery Image 39"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/1g7zS17p/IMG20210103121224.jpg" alt="Gallery Image 40"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/KK01YMjM/IMG20210103121503.jpg" alt="Gallery Image 41"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/wRmMF4VV/IMG20210103122340.jpg" alt="Gallery Image 42"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/zLGf4G7z/IMG20210103122351.jpg" alt="Gallery Image 43"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/7fSb2cbC/IMG20210103123426.jpg" alt="Gallery Image 44"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/dhv3mBTz/IMG20210103130717.jpg" alt="Gallery Image 45"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/v1Y1MzYR/IMG20210103130756.jpg" alt="Gallery Image 46"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/DJWwypts/IMG20210103134846.jpg" alt="Gallery Image 47"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/JtfGtm7L/IMG20210103163909.jpg" alt="Gallery Image 48"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/3WsdW78s/IMG-20210103-105836.jpg" alt="Gallery Image 49"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/LYr6qBpV/IMG-20210103-115924.jpg" alt="Gallery Image 50"></div>
+
+        <a clas<div class="mySlides"><img src="https://i.postimg.cc/7fLwxW79/IMG20210103124546.jpg" alt="Gallery Image 51"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/1fbTLCKN/DSC-7984.jpg" alt="Gallery Image 52"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/PCm60tx9/DSC-8009.jpg" alt="Gallery Image 53"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/mzr8cCwc/DSC-8278.jpg" alt="Gallery Image 54"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/CzRXrTb0/DSC-8363.jpg" alt="Gallery Image 55"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/14CbK5VP/IMG20210103115641.jpg" alt="Gallery Image 56"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/7fjcpsNd/IMG20210103115732.jpg" alt="Gallery Image 57"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/CZsQnFVy/IMG20210103115810.jpg" alt="Gallery Image 58"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/3dz6PSZj/IMG20210103115922.jpg" alt="Gallery Image 59"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/tsPfy3rD/IMG20210103120052.jpg" alt="Gallery Image 60"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/94dvPdZD/IMG20210103120156.jpg" alt="Gallery Image 61"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/hz439HKy/IMG20210103120341.jpg" alt="Gallery Image 62"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/ThYZmWwt/IMG20210103120421.jpg" alt="Gallery Image 63"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/bDYFQKzJ/IMG20210103120609.jpg" alt="Gallery Image 64"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/2bjX4PzR/IMG20210103120913.jpg" alt="Gallery Image 65"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/p9fgQfzB/IMG20210103120943.jpg" alt="Gallery Image 66"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/hz439HSq/IMG20210103122250.jpg" alt="Gallery Image 67"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/MfTN8g45/IMG20210103122254.jpg" alt="Gallery Image 68"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/ykDtp408/IMG20210103122342.jpg" alt="Gallery Image 69"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/0zgWt68C/IMG20210103122405.jpg" alt="Gallery Image 70"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/RWf897sM/IMG20210103123431.jpg" alt="Gallery Image 71"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/f3c67cm0/IMG20210103130143.jpg" alt="Gallery Image 72"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/s1XN1d6L/IMG20210103130146.jpg" alt="Gallery Image 73"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/R6v2gWLd/IMG20210103164229.jpg" alt="Gallery Image 74"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/RWf897sv/IMG20210103172804.jpg" alt="Gallery Image 75"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/qgR5gVbm/IMG-20210103-105842.jpg" alt="Gallery Image 76"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/qN3fqV7P/IMG-20210103-105849.jpg" alt="Gallery Image 77"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/hQfyYTQg/IMG-20210103-115936.jpg" alt="Gallery Image 78"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/bD6VL3Jt/IMG-20210103-151105.jpg" alt="Gallery Image 79"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/cKRV7Rw3/IMG-20210103-181615.jpg" alt="Gallery Image 80"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/8fScKBn3/DSC-7845.jpg" alt="Gallery Image 81"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/RNPfFyYf/DSC-7846.jpg" alt="Gallery Image 82"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/Dmr8WHSv/DSC-7847.jpg" alt="Gallery Image 83"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/tnQn0H7D/DSC-7878.jpg" alt="Gallery Image 84"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/rDQ4DbYJ/DSC-8236.jpg" alt="Gallery Image 85"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/4YddS3Bd/DSC-8242.jpg" alt="Gallery Image 86"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/4m8tdq05/DSC-8362.jpg" alt="Gallery Image 87"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/QKJtR926/IMG20210103115650.jpg" alt="Gallery Image 88"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/B872VyT1/IMG20210103115654.jpg" alt="Gallery Image 89"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/FdjsLkHt/IMG20210103115833.jpg" alt="Gallery Image 90"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/vg6xSm8V/IMG20210103115851.jpg" alt="Gallery Image 91"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/PPdN1yDb/IMG20210103115929.jpg" alt="Gallery Image 92"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/MnTTFGdd/IMG20210103120159.jpg" alt="Gallery Image 93"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/4m4VXsWy/IMG20210103120428.jpg" alt="Gallery Image 94"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/Wtk055hN/IMG20210103120432.jpg" alt="Gallery Image 95"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/k21VJSBk/IMG20210103120616.jpg" alt="Gallery Image 96"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/cKkfbjRy/IMG20210103120621.jpg" alt="Gallery Image 97"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/BX5H0tTz/IMG20210103120953.jpg" alt="Gallery Image 98"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/NK461LLk/IMG20210103121235.jpg" alt="Gallery Image 99"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/5jV8kwvJ/IMG20210103122258.jpg" alt="Gallery Image 100"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/bdk2xdBd/IMG20210103122353.jpg" alt="Gallery Image 101"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/PpG5JQhD/IMG20210103124547.jpg" alt="Gallery Image 102"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/94gynSGv/IMG20210103130721.jpg" alt="Gallery Image 103"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/Lnv5DPBX/IMG-20210103-110300.jpg" alt="Gallery Image 104"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/yk7W0jRp/IMG-20210103-153239.jpg" alt="Gallery Image 105"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/yWcSmWbg/IMG-20210103-173031.jpg" alt="Gallery Image 106"></div>
+<div class="mySlides"><img src="https://i.postimg.cc/hQ1jHzkL/IMG-20210103-181627.jpg" alt="Gallery Image 107"></div>
+s="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+</section>
+
+<section class="section" id="getinvolved">
+    <h2 class="section-title">Get Involved</h2>
+    <div class="button-group">
+      <a class="btn" href="https://wa.me/254747227522" target="_blank">Chat on WhatsApp</a>
+      <a class="btn" href="#">Donate</a>
+      <a class="btn" href="#">Volunteer</a>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-info">
+<p><strong>Email:</strong> 
+  <a href="mailto:lovesprinklersfoundation@gmail.com">lovesprinklersfoundation@gmail.com</a>
+</p>
+        <p><strong>Phone:</strong> +254 747 227 522</p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/YourPage" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/254747227522" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    
+</section>
+
+<footer>
+    © Love Sprinklers Foundation. All rights reserved.
+</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
