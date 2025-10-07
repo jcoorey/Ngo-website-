@@ -355,20 +355,31 @@ s="prev" onclick="plusSlides(-1)">❮</a>
 </footer>
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+let slideIndex = 0;
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex - 1].style.display = "block";  
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";  
+
+window.onload = showSlides;.mySlides {
+      display: none;
+        width: 100%;       /* adjust as needed */
+          height: auto;      /* maintain aspect ratio */
+            animation: fade 1s ease-in-out;
+            }
+
+            @keyframes fade {
+              from {opacity: 0.4;}
+                to {opacity: 1;}
+                }
 }
 </script>
 
