@@ -148,7 +148,9 @@ nav a:hover {
 .gallery-section {
   padding: 60px 20px;
   background: #fff;
-}
+}.mySlides:first-child {
+    display: block;
+  }
 
 .gallery-container {
   display: grid;
@@ -209,5 +211,32 @@ footer {
 
   .about-text, .about-image {
     flex: 1 1 100%;
+  }.mySlides:first-child {
+    display: block;
   }
+}<script>
+let slideIndex = 1;
+
+document.addEventListener("DOMContentLoaded", () => {
+    showSlides(slideIndex);
+});
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (slides.length === 0) return;
+
+    if (n > slides.length) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+}
+</script>
