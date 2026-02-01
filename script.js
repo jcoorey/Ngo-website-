@@ -38,5 +38,31 @@ document.addEventListener("DOMContentLoaded", function () {
                                                                                                                       }
                                                                                                                       });
                                                                                                                       </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    window.plusSlides = function(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+
+        if (slides.length === 0) return;
+
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+    }
+});
+</script>
                                                                                                                       
 })
